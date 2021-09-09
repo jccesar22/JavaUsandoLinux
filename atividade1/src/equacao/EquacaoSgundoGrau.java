@@ -30,10 +30,5 @@ public class EquacaoSgundoGrau {
 		this.c = c;
 	}
 	
-	public double divide() {
-		
-	}
-	
-	
 
 }

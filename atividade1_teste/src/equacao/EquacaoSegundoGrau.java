@@ -1,5 +1,7 @@
 package equacao;
 
+import java.io.IOException;
+
 public class EquacaoSegundoGrau {
 	private double a;
 	private double b;
@@ -19,13 +21,12 @@ public class EquacaoSegundoGrau {
 
 
 
-	public void divide(double a, double b, double c) {
+	public void Equacao(double a, double b, double c) {
 		
 		if(a != 0){ 
 	        //sempre o "A" não pode ser zero
 	            delta = (float) ((b*b) - (4*a*c));
 	            sqrtdelta = (float)Math.sqrt(delta);
-	        
 	        //se a raiz de delta for maior que 0, as raízes são reais    
 	            if(delta >=0){
 	                raiz1 = (float) (((-1)*b + sqrtdelta)/(2*a));
@@ -48,28 +49,5 @@ public class EquacaoSegundoGrau {
 	            System.out.println("Coeficiente 'a' inválido. Não é uma equação do Segundo grau o Coeficiente zero");
 	        }
 	    }
-
-		/* if(a != 0 || b != 0 || c != 0) {
-	            throw new ArithmeticException("não poder ter zero na equação");
-	            
-	        }
-		
-	        double delta = Math.pow(b, 2) - 4 * a * c;
-	        System.out.println("o valor do Delta e :" + delta);
-	        double x1, x2;
-
-	        if (delta < 0) {
-	            System.out.println("Não há solução real");
-	        } else if (delta > 0){
-	            x1 = (-b + Math.pow(delta, 1/2)) / (2 * a);
-	            x2 = (-b - Math.pow(delta, 1/2)) / (2 * a);
-	            System.out.println("Há duas soluções reais: " + x1 + " e " + x2);
-	        } else {
-	            x1 = (-b + Math.pow(delta, 1/2)) / (2 * a);
-	            x2 = (-b - Math.pow(delta, 1/2)) / (2 * a);
-	            System.out.println("Há apenas uma solução real: " + x1 + " e " + x2);
-	        }
-	        return 0;
-	    }*/
 	
 	}

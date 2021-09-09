@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/home/juliocesarsoares/Documentos/GitHub/javaUsandoLinux/JavaUsandoLinux/.metadata/.plugins/org.eclipse.jdt.core
+259975907.index
+592480439.index
+1808566966.index

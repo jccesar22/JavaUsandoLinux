@@ -18,7 +18,7 @@ public class Program {
 	            System.out.println("c");
 	            c = in.nextDouble();
 	       EquacaoSegundoGrau equacao = new EquacaoSegundoGrau();
-	       equacao.divide(a, b, c);
+	       equacao.Equacao(a, b, c);
 	       
 
 }
