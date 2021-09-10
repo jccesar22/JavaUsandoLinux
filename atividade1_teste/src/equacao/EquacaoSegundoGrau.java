@@ -75,9 +75,10 @@ public class EquacaoSegundoGrau {
 			System.out.println("--------------------Raizes diferentes----------------------");
 			System.out.println("Raizes diferentes podem dar o >>NaN<<  que e nunber a nunber");
 			System.out.println("Valor delta " + delta);
-			raiz1 = ((-b + sqrtdelta) / (2 * a));
-			raiz2 = ((-b - sqrtdelta) / (2 * a));
-			System.out.println("Raízes1: " + raiz1 + " e Raízes2: " + raiz2);
+			double divisor = 2*a;
+			raiz1 = -b + sqrtdelta;
+			raiz2 = -b - sqrtdelta;
+			System.out.println("Raízes1: " + raiz1 + " > dividido por "+divisor+ "\nRaízes2: " + raiz2+ " > dividido por "+divisor);
 			System.out.println("-----------------------Resultado---------------------------");
 			System.out.println("INFORMACAO: " + "Normalmente NaN acontecem como resultado de:\n" + "\n"
 					+ "-Qualquer operação com NaN como operando\n" + "-Divisões 0/0, infinito / infinito\n"
