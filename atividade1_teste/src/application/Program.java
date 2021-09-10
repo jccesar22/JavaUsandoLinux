@@ -7,31 +7,24 @@ import equacao.EquacaoSegundoGrau;
 
 public class Program {
 
-	public static void main(String[] args) throws Exception {
+	public static void main(String[] args) {
 		EquacaoSegundoGrau equacao = new EquacaoSegundoGrau();
 		double a, b, c;
-		Scanner in = new Scanner(System.in);
+		Scanner teclado = new Scanner(System.in);
 		try {
-			
+			System.out.println("*********************** Equacao Segundo Grau ***********************");
 			System.out.println("a");
-			a = in.nextDouble();
+			a = teclado.nextDouble();
 			System.out.println("b");
-			b = in.nextDouble();
+			b = teclado.nextDouble();
 			System.out.println("c");
-			c = in.nextDouble();
+			c = teclado.nextDouble();
 			equacao.Equacao(a, b, c);
-		} catch (InputMismatchException e) {// validacao dde Strinf
+			System.out.println("*********************** Equacao Segundo Grau ***********************");
+		} catch (InputMismatchException e) {// validacao de Double para não deixar digitar String no campo double
 			System.out.println("Erro: Não poder ser usado <String> no campo de <Double>");
-			try {
-			equacao.dados();
-			}
-			catch (InputMismatchException ev)
-			{
-				equacao.dados();
-
-			}
+			equacao.Dados();
 		}
-		in.close();
-
+		teclado.close();
 	}
 }
