@@ -1,4 +1,5 @@
 package application;
+
 import java.util.InputMismatchException;
 import equacao.EquacaoSegundoGrau;
 import equacao.Read;
@@ -10,21 +11,22 @@ public class Program {
 		double a, b, c;
 		try {
 			System.out.println("*********************** Equacao Segundo Grau ***********************");
-			System.out.println("a");
+			System.out.println("Equação do 2o grau: ax² + bx + cx = 0");
+			System.out.print("Entre com o valor de a: ");
 			a = Read.readDouble();
-			while(a == 0) {
+			while (a == 0) {
 				System.out.println("Nao pode ser zero ou colocar letras!\nDigite novamente; ");
-				a= Read.readDouble();
+				a = Read.readDouble();
 			}
-			System.out.println("b");
+			System.out.print("Entre com o valor de b: ");
 			b = Read.readDouble();
-			while(b == 0) {
+			while (b == 0) {
 				System.out.println("Nao pode ser zero ou colocar letras!\nDigite novamente; ");
-				b= Read.readDouble();
+				b = Read.readDouble();
 			}
-			System.out.println("c");
+			System.out.print("Entre com o valor de c: ");
 			c = Read.readDouble();
-			while(c == 0) {
+			while (c == 0) {
 				System.out.println("Nao pode ser zero ou colocar letras!\nDigite novamente; ");
 				c = Read.readDouble();
 			}
